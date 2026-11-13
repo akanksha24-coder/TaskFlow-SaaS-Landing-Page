@@ -19,9 +19,6 @@ A modern and responsive SaaS landing page designed to help teams manage projects
 - Contact and demo request form
 - Mobile-friendly layout
 
-## 📸 Project Preview
-Screenshots of the website will be added here.
-
 ## 📂 Project Structure
 - index.html
 - style.css
