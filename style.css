@@ -79,3 +79,54 @@ h1 { margin: 22px 0 20px; font-size: clamp(42px,5.2vw,64px); line-height: 1.12; 
 @media (max-width: 390px) {
   .container { width: calc(100% - 28px); } h1 { font-size: 39px; }.hero-actions { align-items: stretch; flex-direction: column; }.hero-actions .button { width: 100%; }.dash-sidebar { display: none; }.dash-content { grid-template-columns: 1fr; }.dash-main { padding: 17px; }.floating-note { right: 0; }.footer-links { width: 100%; margin-left: 0; }.footer-main { gap: 10px; }
 }
+
+/* TaskFlow Dashboard Design Fix */
+
+.dashboard {
+  transform: none;
+  border-radius: 18px;
+}
+
+.dash-content {
+  grid-template-columns: 145px minmax(0, 1fr);
+}
+
+.dash-main {
+  min-width: 0;
+}
+
+.task-row {
+  gap: 10px;
+}
+
+.task-row b {
+  font-size: 10px;
+}
+
+.task-row small {
+  font-size: 9px;
+}
+
+.task-tag {
+  font-size: 8px;
+  flex-shrink: 0;
+}
+
+.dash-heading h3 {
+  font-size: 17px;
+}
+
+.metric-card {
+  min-height: 88px;
+}
+
+@media (max-width: 700px) {
+  .dash-content {
+    grid-template-columns: 105px minmax(0, 1fr);
+  }
+
+  .task-row b {
+    font-size: 8px;
+  }
+}
+
